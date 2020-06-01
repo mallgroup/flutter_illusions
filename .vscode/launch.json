@@ -5,8 +5,14 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Dart",
+      "name": "no_1_ehrenstein",
       "program": "no_1_ehrenstein/lib/main.dart",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "no_2_ehrenstein",
+      "program": "no_2_ehrenstein/lib/main.dart",
       "request": "launch",
       "type": "dart"
     }
