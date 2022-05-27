@@ -55,25 +55,21 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           title: Text(widget.title),
         ),
-        body: Center(
-          child: Stack(
-            alignment: Alignment.center,
+        body: Stack(alignment: Alignment.center, children: [
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [circle(), circle()],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [circle(), circle()],
-                ),
-              ],
-            ),
-            square()
-          ]),
-        ));
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [circle(), circle()],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [circle(), circle()],
+              ),
+            ],
+          ),
+          square()
+        ]));
   }
 }
